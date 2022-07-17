@@ -2,11 +2,11 @@
 import './App.css';
 import { React } from "react";
 import ReactDOM from 'react-dom';
-import search from './Components/search';
+import Search from './Components/search/search';
 function App() {
   return (
     <div className="App">
-      <search/>
+      <Search/>
     </div>
   );
 }
