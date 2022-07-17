@@ -1,4 +1,6 @@
+import { AsyncPaginate } from "react-select-async-paginate";
+
 function Search() {
-    return ('hello')
+<AsyncPaginate/>
 }
 export default Search;
