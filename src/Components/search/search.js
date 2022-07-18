@@ -2,7 +2,9 @@ import { AsyncPaginate } from "react-select-async-paginate";
 import React, { useState } from 'react'
 const Search = ({ OnSearchChange }) => {
   const [search, setSearch] = useState(null);
+const loadOptions=(inputValue)=>{
 
+}
   
   const handleOnChange = (searchData) => {
     setSearch(searchData);
@@ -16,7 +18,7 @@ const Search = ({ OnSearchChange }) => {
       debounceTimeout={600}
       value={search}
       onChange={handleOnChange}
-      
+      loadOptions={loadOptions}
     />
     );
 }
