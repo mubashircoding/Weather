@@ -6,11 +6,12 @@ const Search=({onSearchChange})=> {
         setSearch(searchData);
         onSearchChange(searchData);
     }
-<AsyncPaginate
-placeholder='search for city'
-debounceTimeout={600}
-value={search}
-onChange={handleOnChange}
-/>
+    <AsyncPaginate
+      placeholder="Search for city"
+      debounceTimeout={600}
+      value={search}
+      onChange={handleOnChange}
+      loadOptions={loadOptions}
+    />
 }
 export default Search;
