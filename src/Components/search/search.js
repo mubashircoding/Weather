@@ -11,7 +11,7 @@ const Search=({onSearchChange})=> {
       debounceTimeout={600}
       value={search}
       onChange={handleOnChange}
-      loadOptions={loadOptions}
+      
     />
 }
 export default Search;
