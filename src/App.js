@@ -33,7 +33,7 @@ console.log(forecast);
   return (
     <div className="container">
       <Search OnSearchChange={handleOnSearchChange} />
-     {currentWeather && <CurrentWeather data={currentWeather}/>}
+      <CurrentWeather data={currentWeather}/>
     </div>
 
   );
