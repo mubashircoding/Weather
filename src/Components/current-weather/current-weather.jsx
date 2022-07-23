@@ -4,11 +4,15 @@ const CurrentWeather = ({ data }) => {
         <div className="weather">
             <div className="top">
                 <div>
-                    <p className='city'>Belgrade</p>
-                    <p className='weather-description'>Sunny</p>
-                </div>
-                <img src="icons/01d.png" alt="weather" className='weather-icon' />
-            </div>
+                    <p className='city'>{data.city}</p>
+                    <p className="weather-description">{data.weather[0].description}</p>
+        </div>
+        <img
+          alt="weather"
+          className="weather-icon"
+          src={`icons/${data.weather[0].icon}.png`}
+        />
+        </div>
             <div className="bottom">
                 <p className="temperature">18°C</p>
                 <div className="details">
