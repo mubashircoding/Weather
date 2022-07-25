@@ -4,8 +4,8 @@ const CurrentWeather = () => {
         <div className="weather">
             <div className="top">
                 <div>
-                    <p className='city'>Belgrade</p>
-                    <p className='weather-description'>Sunny</p>
+                    <p className='city'>{data.city}</p>
+                    <p className='weather-description'>{data.weather[0]}</p>
                 </div>
                 <img src="icons/01d.png" alt="weather" className='weather-icon' />
             </div>
